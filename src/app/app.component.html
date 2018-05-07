@@ -1,1 +1,8 @@
-<app-grid></app-grid>
+<mat-tab-group (selectedTabChange)="onChange($event, cats, bananas)">
+  <mat-tab label="Cats">
+    <app-grid id="agrid" #cats></app-grid>
+  </mat-tab>
+  <mat-tab label="Bananas">
+    <app-grid id="rdgrid" #bananas></app-grid>
+  </mat-tab>
+</mat-tab-group>
